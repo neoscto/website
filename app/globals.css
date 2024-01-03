@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-outfit);
+}
+
+.landing-page-container{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../public/landingpage-bg.png");
+}
+
+.work-list-marker ::marker { 
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-page-container{
+    background-image: url("../public/landingpage-bg-mbl.png");
+  }
+}
